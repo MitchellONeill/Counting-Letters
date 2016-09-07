@@ -1,10 +1,10 @@
 
 function countLetters(str) {
-  var charList = str.split("");
+  var charList = str.toLowerCase().split("");
   var charMap = {};
   for (var i = 0; i < charList.length; i++) {
     if(charMap[charList[i]] === undefined) {
-      charMap[charList[i]] = 1;
+      charMap[charList[i]] = 1 ;
       } else {
        charMap[charList[i]] += 1;
     }
